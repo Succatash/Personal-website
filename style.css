@@ -90,7 +90,22 @@ padding: 0 .5em .5em 0;
 
 }
 
+.pic-portfolio{
+  height: 10em;
+  width: 10em;
+  margin: .5em;
+}
 
+.container{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  height: 20em;
+}
+
+.title-portfolio{
+  text-align: center;
+}
 #container {
 width: 80%;
 margin: auto;
