@@ -1,14 +1,19 @@
-
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;}
 
 #nav{
   display:flex;
 justify-content: flex-end;
   height: 2em;
-  padding: 0 5%;
+  padding: 0;
   width:60vw;
   gap:1.5em;
   min-width: 450px;
- 
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 body{display: block;}
