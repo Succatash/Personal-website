@@ -1,50 +1,70 @@
+/* color chart for my website */
+/* 
+#6D7cff  	
+#FC52FF
+#ffffff
+#1E2022
+#a0aaff
+#3a4eff
+#aaabab
+ */
 
 
-#nav{
-  display:flex;
-justify-content: flex-end;
-  height: 2em;
-  padding: 0 5%;
-  width:60vw;
-  gap:1.5em;
-  min-width: 450px;
- 
-}
 
-body{display: block;}
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;}
 
-header h1{color:white;
-  padding-left: 1em;
 
-}
-
+/* header styling */
 
 #header{
-  margin: auto;
+	margin: auto;
   display: flex;
-  background-color: black;
+  background:#1E2022;
   align-items: center;
   text-align: center;
-  position: sticky;
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 
+	
+}
+
+#nav{
+	display:flex;
+  justify-content: flex-end;
+	height: 2em;
+	padding: 0;
+	width:60vw;
+	gap:1.5em;
+	min-width: 450px;
+	margin-left: 10em;
+}
+.links:hover{
+color:#6D7cff
+}
+
+
+#logo{
+	height: 90px;;
+	width: 110px;
+	margin-left: 7em;
 }
 
 .links{
 text-decoration: none;
-font-size: xx-large;
+font-size: x-large;
 color: white;
 }
 
 
 /* main area index page */
 main{display: block;
-min-height: 100vh;}
+min-height: 100vh;
+margin-top:90px;}
 
-#main{
- width: 100vw;
- color: white;
- background-color: #757373;
-}
 
 #interests{
   display: block;
@@ -56,24 +76,33 @@ min-height: 100vh;}
   padding:1.5em 0;
 
 }
-div #quote{
 
-  margin: auto;
-}
 
 #quote{
-  display: block;
-  text-align: center;
+display:block;
+  text-align: right;
 font-family: cursive;
- font-size:3em ;
+ font-size:2em ;
  font-weight: 500;
  padding-bottom: 1em;
+ overflow-wrap: normal;
+ width: 240px;
+ margin-left:calc(100vw - 300px)
  
 }
 
-#title-index{text-align: center;}
+#title-index{text-align: center;
+ padding-top:2em;
+text-align: left;}
+
+
+
 
 /* about page css */
+#about{
+	background-color: #aaabab;
+}
+
 #title-about{
   text-align: center;
   color: black;
@@ -111,9 +140,6 @@ width: 80%;
 margin: auto;
 padding-bottom: 12rem;
 
-
-
-
 }
 
 .about{
@@ -125,6 +151,32 @@ h2{ padding-left: 1em;
 font-weight: 800;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
+
+/* portfolio section */
+#portfolio{
+	background-color: #a0aaff;
+}
+
+
+/* contact section */
+
+#contact{
+	display: flex;
+	flex-direction: row;
+}
+
+form{
+display: flex;
+flex-direction: column;
+align-items: left;
+margin: 2% 10%;
+width: 25vw
+}
+
+#personalpic{
+	width:25vw;
+	margin: auto;
+}
 /* 
 footers start */
 
@@ -139,13 +191,11 @@ a.white:hover {
 
 #footers {
 	background-color: black;
-	height:12em;
-	margin-top: 1.5rem;
-  position:fixed;
-  width: 98.5vw;
-  bottom: 10px;
-  left: 10px;
-  right:10px;
+	height:8em;
+	
+  position:sticky;
+  width: 100%;
+ 
 }
 /* SOCIAL MEDIA ICONS */
 #socialMediaContainer {
@@ -154,7 +204,7 @@ a.white:hover {
 	max-width: 100%;
 	margin: auto;
 	min-height: 6rem;
-	padding-top: 3rem;
+	padding-top: 1rem;
 }
 
 div.socialMediaIcons a {
