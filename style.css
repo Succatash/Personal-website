@@ -42,6 +42,10 @@ padding: 0;}
 	min-width: 450px;
 	margin-left: 10em;
 }
+.links:hover{
+color:#6D7cff
+}
+
 
 #logo{
 	height: 90px;;
@@ -51,21 +55,16 @@ padding: 0;}
 
 .links{
 text-decoration: none;
-font-size: xx-large;
+font-size: x-large;
 color: white;
 }
 
 
 /* main area index page */
 main{display: block;
-min-height: 100vh;}
+min-height: 100vh;
+margin-top:90px;}
 
-#main{
- 
- color: white;
- background-color: #757373;
- margin-top:90px;
-}
 
 #interests{
   display: block;
@@ -77,24 +76,33 @@ min-height: 100vh;}
   padding:1.5em 0;
 
 }
-div #quote{
 
-  margin: auto;
-}
 
 #quote{
-  display: block;
-  text-align: center;
+display:block;
+  text-align: right;
 font-family: cursive;
- font-size:3em ;
+ font-size:2em ;
  font-weight: 500;
  padding-bottom: 1em;
+ overflow-wrap: normal;
+ width: 240px;
+ margin-left:calc(100vw - 300px)
  
 }
 
-#title-index{text-align: center;}
+#title-index{text-align: center;
+ padding-top:2em;
+text-align: left;}
+
+
+
 
 /* about page css */
+#about{
+	background-color: #aaabab;
+}
+
 #title-about{
   text-align: center;
   color: black;
@@ -143,6 +151,32 @@ h2{ padding-left: 1em;
 font-weight: 800;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
+
+/* portfolio section */
+#portfolio{
+	background-color: #a0aaff;
+}
+
+
+/* contact section */
+
+#contact{
+	display: flex;
+	flex-direction: row;
+}
+
+form{
+display: flex;
+flex-direction: column;
+align-items: left;
+margin: 2% 10%;
+width: 25vw
+}
+
+#personalpic{
+	width:25vw;
+	margin: auto;
+}
 /* 
 footers start */
 
